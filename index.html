@@ -18,6 +18,22 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<style>
+		.iframe-container {
+			overflow: hidden;
+			padding-top: 56.25%;
+			position: relative;
+		}
+
+		.iframe-container iframe {
+			border: 0;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	</style>
 </head>
 
 <body>
@@ -419,44 +435,14 @@
 	<!--================End Event Schedule Area =================-->
 
 	<!--================End Event Schedule Area =================-->
-	<section class="home_map_area">
-		<div id="mapBox2" class="mapBox2" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13"
-			data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia." data-mlat="40.701083"
-			data-mlon="-74.1522848">
-		</div>
-		<div class="home_details">
-			<div class="container">
-				<div class="box_home_details">
-					<div class="media">
-						<div class="d-flex">
-							<i class="lnr lnr-home"></i>
-						</div>
-						<div class="media-body">
-							<h4>California, United States</h4>
-							<p>Santa monica bullevard</p>
-						</div>
-					</div>
-					<div class="media">
-						<div class="d-flex">
-							<i class="lnr lnr-clock"></i>
-						</div>
-						<div class="media-body">
-							<h4>Monday to Wednesday</h4>
-							<p>17-19 June, 218</p>
-						</div>
-					</div>
-					<div class="media">
-						<div class="d-flex">
-							<i class="lnr lnr-envelope"></i>
-						</div>
-						<div class="media-body">
-							<h4>support@colorlib.com</h4>
-							<p>Send us your query anytime!</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<section class="home_map_area iframe-container">
+		<!-- <div id="mapBox2" class="mapBox2" data-lat="17.3805282" data-lon="78.3826143" data-zoom="13"
+			data-info="Vasavi College of Engineering, Hyderabad, Telangana, India" data-mlat="17.3805282"
+			data-mlon="78.3826143">
+		</div> -->
+		<iframe id="mapIframe" onload=""
+			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15230.603210403495!2d78.3826143!3d17.3805282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c30ca8d2ffb8734!2sVasavi%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1574527933482!5m2!1sen!2sin"
+			allowfullscreen=""></iframe>
 	</section>
 	<!--================End Event Schedule Area =================-->
 
@@ -597,7 +583,8 @@
 									<input id="email" name="EMAIL" placeholder="Your email address"
 										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
 										required type="email"><br><br>
-									<input type="submit" class="btn sub-btn" style="position: static;" value="Post Comment">
+									<input type="submit" class="btn sub-btn" style="position: static;"
+										value="Post Comment">
 								</div>
 								<div class="mt-10 info"></div>
 							</form>
