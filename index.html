@@ -18,6 +18,7 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/snackbar.css">
 </head>
 
 <body>
@@ -569,19 +570,7 @@
 					</div>
 				</div>
 
-				<script>
-					function submitFeedback() {
-						comment = document.getElementById("comment").value;
-						name = document.getElementById("name").value;
-						email = document.getElementById("email").value;
-						url = "https://docs.google.com/forms/d/e/1FAIpQLSfgTfhijWCxTZsfxbpUb_nuH6Cdi6c1VqYweh2oB9CLspNy0w/formResponse?usp=pp_url&entry.62543713=" + comment + "&entry.722919610=" + name + "&entry.318867963=" + email + "&submit=Submit";
-
-						var xhttp = new XMLHttpRequest();
-						xhttp.open("GET", url, true);
-						xhttp.send();
-						return "Succefully Posted!";
-					}
-				</script>
+				
 
 				<div class="col-lg-5 col-md-6 col-sm-6">
 					<div class="single-footer-widget news_widgets">
@@ -597,12 +586,13 @@
 									<input id="email" name="EMAIL" placeholder="Your email address"
 										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
 										required type="email"><br><br>
-									<input type="submit" class="btn sub-btn" style="position: static;" value="Post Comment">
+									<input type="submit" id="commentBtn" class="btn sub-btn" style="position: static;" value="Post Comment">
 								</div>
-								<div class="mt-10 info"></div>
+								
 							</form>
 						</div>
 					</div>
+					<div id="snackbar"></div>
 				</div>
 
 				<div class="col-lg-3 col-md-6 col-sm-6 offset-lg-1">
@@ -638,6 +628,21 @@
 
 
 	<!-- Optional JavaScript -->
+	<script>
+		function submitFeedback() {
+			comment = document.getElementById("comment").value;
+			name = document.getElementById("name").value;
+			email = document.getElementById("email").value;
+			url = "https://docs.google.com/forms/d/e/1FAIpQLSfgTfhijWCxTZsfxbpUb_nuH6Cdi6c1VqYweh2oB9CLspNy0w/formResponse?usp=pp_url&entry.62543713=" + comment + "&entry.722919610=" + name + "&entry.318867963=" + email + "&submit=Submit";
+
+			var xhttp = new XMLHttpRequest();
+			xhttp.open("GET", url, false);
+			xhttp.send();
+			return "Succefully Posted!";
+		}
+	</script>
+
+
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.js"></script>
