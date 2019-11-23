@@ -322,6 +322,7 @@
 						document.getElementById("commentBtn").disabled = true;
 						if (this.status == 200) {
 							document.getElementById("snackbar").innerHTML = 'Message Sent Successfully';
+							document.getElementById("feedback").reset();
 							setTimeout(function(){ x.className = x.className.replace("show", ""); document.getElementById("commentBtn").disabled = false;}, 3000);
 						}
 						else{
