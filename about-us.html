@@ -17,6 +17,7 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/snackbar.css">
 		<style>
 			.iframe-container {
 				overflow: hidden;
@@ -272,7 +273,7 @@
 						<h6 class="footer_title">Leave a Reply</h6>
 						<p>Your email address will not be published. </p>
 						<div id="mc_embed_signup">
-							<form id="feedback" action="#" onsubmit="submitFeedback()" class="subscribe_form relative">
+							<form id="feedback" action="#" class="subscribe_form relative">
 								<div class="input-group d-flex flex-row">
 									<input type="text" id="comment" name="COMMENT" placeholder="Write a comment"
 										cols="45" rows="4" maxlength="65525" required></textarea><br>
@@ -281,13 +282,13 @@
 									<input id="email" name="EMAIL" placeholder="Your email address"
 										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
 										required type="email"><br><br>
-									<input type="submit" class="btn sub-btn" style="position: static;"
-										value="Post Comment">
+									<input type="button" onclick="submitFeedback()" id="commentBtn" class="btn sub-btn" style="position: static;" value="Post Comment">
 								</div>
-								<div class="mt-10 info"></div>
+								
 							</form>
 						</div>
 					</div>
+					<div id="snackbar"></div>
 				</div>
 				<div class="col-lg-1"></div>
 			</div>
@@ -305,7 +306,35 @@
         
         
         
-        
+		<script>
+			function submitFeedback() {
+				var x = document.getElementById("snackbar");
+				
+				comment = document.getElementById("comment").value;
+				name = document.getElementById("name").value;
+				email = document.getElementById("email").value;
+				url = "https://docs.google.com/forms/d/e/1FAIpQLSfgTfhijWCxTZsfxbpUb_nuH6Cdi6c1VqYweh2oB9CLspNy0w/formResponse?usp=pp_url&entry.62543713=" + comment + "&entry.722919610=" + name + "&entry.318867963=" + email + "&submit=Submit";
+
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if(this.readyState==4){
+						x.className = "show";
+						document.getElementById("commentBtn").disabled = true;
+						if (this.status == 200) {
+							document.getElementById("snackbar").innerHTML = 'Message Sent Successfully';
+							setTimeout(function(){ x.className = x.className.replace("show", ""); document.getElementById("commentBtn").disabled = false;}, 3000);
+						}
+						else{
+							document.getElementById("snackbar").innerHTML = 'Could not send message. Please try later';
+							setTimeout(function(){ x.className = x.className.replace("show", ""); document.getElementById("commentBtn").disabled = false;}, 3000);
+						}
+					}
+				};
+				xhttp.open("GET", url, true);
+				xhttp.send();
+
+			}
+		</script>
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -324,7 +353,6 @@
         <script src="vendors/counter-up/jquery.counterup.js"></script>
         <script src="js/mail-script.js"></script>
         <!--gmaps Js-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="js/gmaps.min.js"></script>
         <script src="js/theme.js"></script>
     </body>
