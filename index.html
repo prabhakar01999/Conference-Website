@@ -531,7 +531,8 @@
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area p_120">
 		<div class="container">
-			<div class="row">
+			<div class="row" style="text-align: center; margin:auto;">
+				<div class="col-lg-1 col-md-2 col-sm-2"></div>
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget tp_widgets">
 						<h6 class="footer_title">Contact Us</h6>
@@ -555,19 +556,7 @@
 					</div>
 				</div>
 
-				<script>
-					function submitFeedback() {
-						comment = document.getElementById("comment").value;
-						name = document.getElementById("name").value;
-						email = document.getElementById("email").value;
-						url = "https://docs.google.com/forms/d/e/1FAIpQLSfgTfhijWCxTZsfxbpUb_nuH6Cdi6c1VqYweh2oB9CLspNy0w/formResponse?usp=pp_url&entry.62543713=" + comment + "&entry.722919610=" + name + "&entry.318867963=" + email + "&submit=Submit";
-
-						var xhttp = new XMLHttpRequest();
-						xhttp.open("GET", url, true);
-						xhttp.send();
-						return "Succefully Posted!";
-					}
-				</script>
+				<div class="col-lg-2"></div>				
 
 				<div class="col-lg-5 col-md-6 col-sm-6">
 					<div class="single-footer-widget news_widgets">
@@ -591,22 +580,7 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="col-lg-3 col-md-6 col-sm-6 offset-lg-1">
-					<div class="single-footer-widget instafeed">
-						<h6 class="footer_title">Instagram Feed</h6>
-						<ul class="list instafeed d-flex flex-wrap">
-							<li><img src="img/instagram/Image-01.jpg" alt=""></li>
-							<li><img src="img/instagram/Image-02.jpg" alt=""></li>
-							<li><img src="img/instagram/Image-03.jpg" alt=""></li>
-							<li><img src="img/instagram/Image-04.jpg" alt=""></li>
-							<li><img src="img/instagram/Image-05.jpg" alt=""></li>
-							<li><img src="img/instagram/Image-06.jpg" alt=""></li>
-							<li><img src="img/instagram/Image-07.jpg" alt=""></li>
-							<li><img src="img/instagram/Image-08.jpg" alt=""></li>
-						</ul>
-					</div>
-				</div>
+				<div class="col-lg-1"></div>
 			</div>
 			<div class="row footer-bottom d-flex justify-content-between align-items-center">
 				<p class="col-lg-8 col-md-8 footer-text m-0">
@@ -623,7 +597,19 @@
 
 
 
+	<script>
+		function submitFeedback() {
+			comment = document.getElementById("comment").value;
+			name = document.getElementById("name").value;
+			email = document.getElementById("email").value;
+			url = "https://docs.google.com/forms/d/e/1FAIpQLSfgTfhijWCxTZsfxbpUb_nuH6Cdi6c1VqYweh2oB9CLspNy0w/formResponse?usp=pp_url&entry.62543713=" + comment + "&entry.722919610=" + name + "&entry.318867963=" + email + "&submit=Submit";
 
+			var xhttp = new XMLHttpRequest();
+			xhttp.open("GET", url, true);
+			xhttp.send();
+			return "Succefully Posted!";
+		}
+	</script>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
