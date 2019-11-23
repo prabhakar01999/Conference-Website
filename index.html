@@ -34,6 +34,7 @@
 			width: 100%;
 		}
 	</style>
+	<link rel="stylesheet" href="css/snackbar.css">
 </head>
 
 <body>
@@ -434,7 +435,7 @@
 	</section>
 	<!--================End Event Schedule Area =================-->
 
-	<!--================End Event Schedule Area =================-->
+	<!--================Start Event Map Area =================-->
 	<section class="home_map_area iframe-container">
 		<!-- <div id="mapBox2" class="mapBox2" data-lat="17.3805282" data-lon="78.3826143" data-zoom="13"
 			data-info="Vasavi College of Engineering, Hyderabad, Telangana, India" data-mlat="17.3805282"
@@ -444,7 +445,7 @@
 			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15230.603210403495!2d78.3826143!3d17.3805282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c30ca8d2ffb8734!2sVasavi%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1574527933482!5m2!1sen!2sin"
 			allowfullscreen=""></iframe>
 	</section>
-	<!--================End Event Schedule Area =================-->
+	<!--================End Event Map Area =================-->
 
 	<!--================Price Area =================-->
 	<section class="price_area p_120">
@@ -572,13 +573,13 @@
 									<input id="email" name="EMAIL" placeholder="Your email address"
 										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
 										required type="email"><br><br>
-									<input type="submit" class="btn sub-btn" style="position: static;"
-										value="Post Comment">
+									<input type="submit" id="commentBtn" class="btn sub-btn" style="position: static;" value="Post Comment">
 								</div>
-								<div class="mt-10 info"></div>
+								
 							</form>
 						</div>
 					</div>
+					<div id="snackbar"></div>
 				</div>
 				<div class="col-lg-1"></div>
 			</div>
@@ -611,6 +612,21 @@
 		}
 	</script>
 	<!-- Optional JavaScript -->
+	<script>
+		function submitFeedback() {
+			comment = document.getElementById("comment").value;
+			name = document.getElementById("name").value;
+			email = document.getElementById("email").value;
+			url = "https://docs.google.com/forms/d/e/1FAIpQLSfgTfhijWCxTZsfxbpUb_nuH6Cdi6c1VqYweh2oB9CLspNy0w/formResponse?usp=pp_url&entry.62543713=" + comment + "&entry.722919610=" + name + "&entry.318867963=" + email + "&submit=Submit";
+
+			var xhttp = new XMLHttpRequest();
+			xhttp.open("GET", url, false);
+			xhttp.send();
+			return "Succefully Posted!";
+		}
+	</script>
+
+
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.js"></script>
