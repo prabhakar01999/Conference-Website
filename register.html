@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Conference</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/snackbar.css">
+    <style>
+        .iframe-container {
+            overflow: hidden;
+            padding-top: 56.25%;
+            position: relative;
+        }
+
+        .iframe-container iframe {
+            border: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .img-wrap {
+            width: 200px;
+            height: 150px;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        div>img {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-height: 100%;
+            min-width: 100%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container box_1620">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+
+                    <a class="navbar-brand logo_h" href="http://www.vce.ac.in"><img src="img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> -->
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">About</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="about-us.html">College</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="details.html">Event</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="committees.html">Committees </a></li>
+                            <li class="nav-item"><a class="nav-link" href="accommodation.html">Accommodation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./schedule.html">Schedule</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+
+
+                            <!-- <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="about-us.html">College</a>
+                                        <li class="nav-item"><a class="nav-link" href="details.html">Event</a>
+                                    </ul>
+                                </li> -->
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item"><a href="./register.html" class="tickets_btn">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"
+                data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <div class="page_link">
+                        <a href="index.html">Home</a>
+                        <a href="speakers.html">Register</a>
+                    </div>
+                    <h2>Register</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Event Time Area =================-->
+    <section class="event_time_area ab_event pad_top">
+        <div class="container">
+            <div class="event_time_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="event_text">
+                            <h3>Next Event will Start in</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="timer_inner">
+                            <div id="timer" class="timer">
+                                <div class="timer__section days">
+                                    <div class="timer__number"></div>
+                                    <div class="timer__label">days</div>
+                                </div>
+                                <div class="timer__section hours">
+                                    <div class="timer__number"></div>
+                                    <div class="timer__label">hours</div>
+                                </div>
+                                <div class="timer__section minutes">
+                                    <div class="timer__number"></div>
+                                    <div class="timer__label">Minutes</div>
+                                </div>
+                                <div class="timer__section seconds">
+                                    <div class="timer__number"></div>
+                                    <div class="timer__label">seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Event Time Area =================-->
+
+
+
+
+    <!--================Start Pricing Area =================-->
+
+
+    <section class="price_area p_120">
+        <div class="container">
+            <div class="main_title">
+                <h2>Registration Fee </h2>
+                <p>Some Awsome Text.</p>
+            </div>
+            <div class="price_inner row m0">
+                <div class="col-lg-3 col-sm-6 p0">
+                    <div class="price_item">
+                        <div class="price_text">
+                            <h3>Industry</h3>
+                            <h5>Entreprenuers/Freelancers</h5>
+                            <h2>₹1000</h2>
+                            <ul class="list">
+                                <li><a href="#">RAM 1 GB</a></li>
+                                <li><a href="#">Core CPU 1</a></li>
+                                <li><a href="#">SSD Storage 20 GB</a></li>
+                                <li><a href="#">Transfer 1 TB</a></li>
+                                <li><a href="#">Network In 40 Gb</a></li>
+                            </ul>
+                        </div>
+                        <a class="price_btn" href="#">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p0">
+                    <div class="price_item">
+                        <div class="price_text">
+                            <h3>Academica</h3>
+                            <h5>Proferssors</h5>
+                            <h2>₹750</h2>
+                            <ul class="list">
+                                <li><a href="#">RAM 2 GB</a></li>
+                                <li><a href="#">Core CPU 2</a></li>
+                                <li><a href="#">SSD Storage 50 GB</a></li>
+                                <li><a href="#">Transfer 1 TB</a></li>
+                                <li><a href="#">Network In 40 Gb</a></li>
+                            </ul>
+                        </div>
+                        <a class="price_btn" href="#">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p0">
+                    <div class="price_item">
+                        <div class="price_text">
+                            <h3>Students</h3>
+                            <h5>Unversity</h5>
+                            <h2>₹500</h2>
+                            <ul class="list">
+                                <li><a href="#">RAM 4 GB</a></li>
+                                <li><a href="#">Core CPU 4</a></li>
+                                <li><a href="#">SSD Storage 75 GB</a></li>
+                                <li><a href="#">Transfer 2 TB</a></li>
+                                <li><a href="#">Network In 80 Gb</a></li>
+                            </ul>
+                        </div>
+                        <a class="price_btn" href="#">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p0">
+                    <div class="price_item">
+                        <div class="price_text">
+                            <h3>CSI Members</h3>
+                            <h5>Student CHapter</h5>
+                            <h2>₹500</h2>
+                            <ul class="list">
+                                <li><a href="#">RAM 8 GB</a></li>
+                                <li><a href="#">Core CPU 8</a></li>
+                                <li><a href="#">SSD Storage 100 GB</a></li>
+                                <li><a href="#">Transfer 2 TB</a></li>
+                                <li><a href="#">Network In 100 Gb</a></li>
+                            </ul>
+                        </div>
+                        <a class="price_btn" href="#">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Pricing Area =================-->
+
+
+    <!--================Start Payment Details Area =================-->
+    <section class="whole-wrap">
+
+        <div class="container">
+            <div class="section-top-border whole-wrap">
+                <h3 class="mb-30 title_color">Payment Details</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-defination">
+                            <h4 class="mb-20">Bank Details</h4>
+                            <p>
+                                <ul class="list">
+                                    <li>Bank</li>
+                                    <li>Acc Name</li>
+                                    <li>Acc No</li>
+                                    <li>IFSC</li>
+                                    <li>Address</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-defination">
+                            <h4 class="mb-20">UPI</h4>
+                            <div1><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png"
+                                    style="width: 40%;
+                                    height: auto;">
+                            </div1>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-defination">
+                            <h4 class="mb-20">Paytm</h4>
+                            <p>Payment Mobile no</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </sectdivion>
+        <!--================End Payment Details Area =================-->
+
+
+        <!--================ start footer Area  =================-->
+        <footer class="footer-area pad_top pad_btm_50" height="auto">
+            <div class="container">
+                <div class="row" style="text-align: center; margin:auto;">
+                    <div class="col-lg-1 col-md-2 col-sm-2"></div>
+                    <div class="col-lg-3  col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                            <h6 class="footer_title">Contact Us</h6>
+                            Vasavi College of Engineering<br />
+                            <em><small> (Private Un-aided Non-minority
+                                    Autonomous Institution)<br /></small></em>
+                            Affiliated to Osmania University, Hyderabad <br />
+                            Approved by AICTE, New Delhi<br />
+                            9-5-81, Ibrahimbagh<br />
+                            Hyderabad - 500 031<br />
+                            Telangana, India<br /><br />
+
+                            Tel: +91 40 23146003<br />
+                            Fax: +91 40 23146090<br /> <br />
+
+                            <!-- <a
+                               href="/cdn-cgi/l/email-protection#f18183989f929881909db1879294df9092df989f"><span
+                                   class="__cf_email__"
+                                   data-cfemail="4b3b39222528223b2a270b383f2a2d2d653d282e652a28652225">[email&#160;protected]</span></a><br /> -->
+                            Email: <a href="mailto:principal@vce.ac.in">principal@vce.ac.in</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2"></div>
+
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class="single-footer-widget news_widgets">
+                            <h6 class="footer_title">Leave a Reply</h6>
+                            <p>Your email address will not be published. </p>
+                            <div id="mc_embed_signup">
+                                <form id="feedback" action="#" class="subscribe_form relative" onsubmit="">
+                                    <div class="input-group d-flex flex-row">
+                                        <input type="text" id="comment" name="COMMENT" placeholder="Write a comment"
+                                            cols="45" rows="4" maxlength="65525" required></textarea><br>
+                                        <input id="name" name="NAME" placeholder="Your name"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'"
+                                            required><br>
+                                        <input id="email" name="EMAIL" placeholder="Your email address"
+                                            onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Email Address '; ValidateEmail();" required
+                                            type="email"><br><br>
+                                        <input type="submit" onclick="submitFeedback()" id="commentBtn"
+                                            class="btn sub-btn" style="position: static;" value="Post Comment">
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div id="snackbar"></div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <p class="col-lg-8 col-md-8 footer-text m-0">
+                        Copyright &copy;2019. Vasavi College of Engineering, Ibrahimbagh, Hyderabad, India. All
+                        Rights Reserved.</p>
+                    <div class="col-lg-4 col-md-4 footer-social">
+                        <a href="http://www.vce.ac.in/"><i class="fa fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================ End footer Area  =================-->
+
+        <!--================Contact Success and Error message Area =================-->
+        <div id="success" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Thank you</h2>
+                        <p>Your message is successfully sent...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals error -->
+
+        <div id="error" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Sorry !</h2>
+                        <p> Something went wrong </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================End Contact Success and Error message Area =================-->
+
+
+        <script>
+            function ValidateEmail() {
+                var x = document.getElementById("snackbar");
+                email = document.getElementById("email").value;
+
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
+                if (re.test(email)) {
+                    return true;
+                }
+                document.getElementById("commentBtn").disabled = true;
+                x.className = "show";
+                document.getElementById("snackbar").innerHTML = 'Please Enter a Valid Email ID';
+                setTimeout(function () { x.className = x.className.replace("show", ""); document.getElementById("commentBtn").disabled = false; }, 3000);
+                return false;
+            }
+
+            function submitFeedback() {
+                var x = document.getElementById("snackbar");
+
+                comment = document.getElementById("comment").value;
+                name = document.getElementById("name").value;
+                email = document.getElementById("email").value;
+
+                document.getElementById("commentBtn").disabled = true;
+
+                if (comment === "") {
+                    x.className = "show";
+                    document.getElementById("snackbar").innerHTML = 'Please Enter the Comment';
+                    setTimeout(function () { x.className = x.className.replace("show", ""); document.getElementById("commentBtn").disabled = false; }, 3000);
+                    return false;
+                }
+                if (name == "") {
+                    name = "Anonymous";
+                }
+                if (!ValidateEmail(email)) {
+                    document.getElementById("commentBtn").disabled = true;
+                    return false;
+                }
+
+                url = "https://docs.google.com/forms/d/e/1FAIpQLSfgTfhijWCxTZsfxbpUb_nuH6Cdi6c1VqYweh2oB9CLspNy0w/formResponse?usp=pp_url&entry.62543713=" + comment + "&entry.722919610=" + name + "&entry.318867963=" + email + "&submit=Submit";
+
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        x.className = "show";
+                        if (this.status == 200 || this.status == 0) {
+                            document.getElementById("snackbar").innerHTML = 'Message Sent Successfully';
+                            document.getElementById("feedback").reset();
+                            setTimeout(function () { x.className = x.className.replace("show", ""); document.getElementById("commentBtn").disabled = false; }, 3000);
+                        }
+                        else {
+                            document.getElementById("snackbar").innerHTML = 'Could not send message. Please try later';
+                            setTimeout(function () { x.className = x.className.replace("show", ""); document.getElementById("commentBtn").disabled = false; }, 3000);
+                        }
+                    }
+                };
+                xhttp.open("GET", url, true);
+                xhttp.send();
+
+            }
+        </script>
+
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/flipclock/timer.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.js"></script>
+        <script src="js/mail-script.js"></script>
+        <!--gmaps Js-->
+        <script src="js/gmaps.min.js"></script>
+        <script src="js/theme.js"></script>
+</body>
+
+</html>
