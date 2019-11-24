@@ -90,6 +90,10 @@ button:focus {
   padding-bottom: 120px;
 }
 
+.pad_btm_50{
+  padding-bottom : 50px;
+}
+
 .pad_top {
   padding-top: 120px;
 }
