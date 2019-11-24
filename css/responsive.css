@@ -4,10 +4,17 @@
    .header_area .navbar .search {
 		margin-left: 40px;
 	}
+
+	.resp_margin_commt{
+		margin:70px 150px;
+	}
 	/* End Main Menu Area css
 	============================================================================================ */
 }
 @media (max-width:1300px){
+	.resp_margin_commt{
+		margin:70px 150px;
+	}
 }
 @media (max-width:1199px){
 	/* Main Menu Area css
@@ -27,9 +34,15 @@
 	.header_area .navbar .tickets_btn {
 		margin-left: 40px;
 	}
+	.resp_margin_commt{
+		margin:70px 150px;
+	}
 }
 
 @media (max-width:991px){
+	.resp_margin_commt{
+		margin:70px 150px;
+	}
 	/* Main Menu Area css
 	============================================================================================ */
     .navbar-toggler {
@@ -224,13 +237,21 @@
 		text-align: center;
 		margin-top: 15px;
 	}
+	.resp_margin_commt{
+		margin:40px 100px;
+	}
 	/* End End Footer Area css
 	============================================================================================ */
 }
 @media (max-width:600px){
-	
+	.resp_margin_commt{
+		margin:40px 90px;
+	}
 }
 @media (max-width:575px){
+	.resp_margin_commt{
+		margin:20px 70px;
+	}
 	.top_menu {
 		display: none;
 	}
@@ -314,6 +335,9 @@
 }
 
 @media (max-width:480px){
+	.resp_margin_commt{
+		margin:20px 40px;
+	}
 	/* Main Menu Area css
 	============================================================================================ */
 	.header_area .navbar-collapse{
