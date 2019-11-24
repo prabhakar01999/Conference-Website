@@ -91,7 +91,7 @@ button:focus {
 }
 
 .pad_btm_50{
-  padding-bottom : 50px;
+  padding-bottom : 50px !important;
 }
 
 .pad_top {
