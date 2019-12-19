@@ -1,7 +1,7 @@
 var today = new Date();
 
 var timer = function() {};
-timer.countdownDate = new Date(2019,11,28,0,0,0,0);
+timer.countdownDate = new Date(2020,2,30,23,59,59,59);
 
 // set date to 10 days in the future for testing purposes
 //timer.countdownDate.setDate();
@@ -72,7 +72,10 @@ timer.getTimeRemaining = function( timeUnit, divisor ) {
     n = "0" + n;
   }
   
-  return n;
+  if ( n >= 0)
+    return n;
+  
+    return "--";
 }
 
 window.addEventListener("load", function() {
