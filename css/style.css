@@ -9,32 +9,7 @@ is the file you need to edit to change the look of the
 theme.
 ---------------------------------------------------- */
 /*=====================================================================
-@Template Name: HostHub Construction 
-@Author: Rocky Ahmed
-@Developed By: Rocky Ahmed
-@Developer URL: http://rocky.wethemez.com
-Author E-mail: rockybd1995@gmail.com
 
-@Default Styles
-
-Table of Content:
-01/ Variables
-02/ predefin
-03/ header
-04/ button
-05/ banner
-06/ breadcrumb
-07/ about
-08/ team
-09/ project 
-10/ price 
-11/ team 
-12/ blog 
-13/ video  
-14/ features  
-15/ career  
-16/ contact 
-17/ footer
 
 =====================================================================*/
 /*----------------------------------------------------*/
@@ -322,9 +297,10 @@ button:focus {
   top: -70px;
   left: 0;
   right: 0;
-  background-image: -moz-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
+  /* background-image: -moz-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
   background-image: -webkit-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
-  background-image: -ms-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
+  background-image: -ms-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%); */
+  background-color: #2D8EFE;
   -webkit-transform: translateY(70px);
   -ms-transform: translateY(70px);
   transform: translateY(70px);
@@ -3640,6 +3616,7 @@ h6 {
   background-image: -moz-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
   background-image: -webkit-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
   background-image: -ms-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
+  
   border-radius: 5px;
   overflow: hidden;
 }
