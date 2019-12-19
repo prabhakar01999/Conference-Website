@@ -322,9 +322,10 @@ button:focus {
   top: -70px;
   left: 0;
   right: 0;
-  background-image: -moz-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
+  /* background-image: -moz-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
   background-image: -webkit-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
-  background-image: -ms-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%);
+  background-image: -ms-linear-gradient(0deg, #141da2 0%, #9b5cf6 100%); */
+  background-color: #2D8EFE;
   -webkit-transform: translateY(70px);
   -ms-transform: translateY(70px);
   transform: translateY(70px);
