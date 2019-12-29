@@ -46,7 +46,7 @@ body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #777777;
+  color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,7 +74,7 @@ button:focus {
 }
 
 .pad_btm {
-  padding-bottom: 120px;
+  padding-bottom: 50px;
 }
 
 .mt-25 {
@@ -162,7 +162,7 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item {
-  margin-right: 17px;
+  margin-right: 14px;
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
@@ -360,7 +360,7 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  min-height: 900px;
+  min-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3515,7 +3515,7 @@ h6 {
 /* Event Time Area css
 ============================================================================================ */
 .event_time_area {
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 
 .event_time_area.ab_event .event_time_inner {
@@ -4134,3 +4134,7 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+.footer-font {
+  color: gainsboro;
+}
