@@ -43,10 +43,10 @@ a:hover, a:focus {
 
 body {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: black;
+  color: rgb(10, 10, 10);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -498,7 +498,7 @@ button:focus {
 }
 
 .banner_area .banner_inner .banner_content {
-  margin-top: 55px;
+  margin-top: 30px;
 }
 
 .banner_area .banner_inner .banner_content h2 {
